@@ -1,12 +1,16 @@
+/* Styling for the entire app container */
 .App {
   text-align: center;
   margin: 200px;
 }
 
+/* Styling for the tooltip trigger element */
 .tooltip-trigger {
   position: relative;
   display: inline-block;
 }
+
+/* Styling for the tooltip element */
 .tooltip-trigger .tooltip {
   width: 100%;
   background-color: rgb(96, 240, 151);
@@ -20,9 +24,13 @@
   position: absolute;
   z-index: 1;
 }
+
+/* Display the tooltip when hovering over the tooltip trigger element */
 .tooltip-trigger:hover .tooltip {
   opacity: 1;
 }
+
+/* Tooltip positions */
 .tooltip-right {
   top: -12px;
   left: 105%;
@@ -43,6 +51,7 @@
   left: -6%;
 }
 
+/* Triangle arrow for top and bottom tooltips */
 .tooltip-trigger .tooltip-top::after {
   content: " ";
   position: absolute;
@@ -65,6 +74,7 @@
   border-color: transparent transparent rgb(96, 240, 151) transparent;
 }
 
+/* Triangle arrow for right and left tooltips */
 .tooltip-trigger .tooltip-right::after {
   content: " ";
   position: absolute;
@@ -86,6 +96,8 @@
   border-style: solid;
   border-color: transparent transparent transparent rgb(96, 240, 151);
 }
+
+/* Styling for the button element */
 .button {
   padding: 10px 15px;
   border: none;
